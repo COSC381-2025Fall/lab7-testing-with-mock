@@ -274,6 +274,12 @@ def test_given_unsorted_input_then_merged_correctly():
     )
     assert anonymizer_result.text == "<PERSON> is a person"
 
+from unittest import mock
+@mock.patch("presidio_anonymizer.anonymizer_engine.logger")
+def test_given_conflict_input_then_merged_correctly(mock_logger):
+    # replace the following `pass` line with your test implementation
+    pass
+
 
 def _operate(
     text: str,
